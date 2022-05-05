@@ -170,3 +170,24 @@ p {
 .dropdown:hover .dropdown__content {
   display: block;
 }
+
+.hero {
+  background-image: url(../../images/hero-brewlab.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+  background-attachment: fixed;
+  /* margin-top: 100rem; */
+
+  @media only screen and (max-width: 1000px) {
+    background-attachment: initial;
+  }
+}
+
+.hero h1 {
+  padding-top: 150px;
+  font-weight: 600;
+  margin-top: 5rem;
+  height: 90vh;
+  min-height: 650px;
+}
