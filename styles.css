@@ -191,3 +191,15 @@ p {
   height: 90vh;
   min-height: 650px;
 }
+
+.kits__img {
+  height: 320px;
+  width: 360px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
