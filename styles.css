@@ -203,3 +203,30 @@ p {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
+.banner {
+  padding: 80px 0px;
+  margin-top: -5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.banner__img {
+  min-width: 480px;
+}
+
+.banner__img--bundles {
+  width: 83vw;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.banner__img--infographic {
+  width: 90vw;
+  height: auto;
+  margin: 50px auto 0 auto;
+  border-radius: 10px;
+}
