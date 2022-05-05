@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: white;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+  font-size: 1.5rem;
+  background-color: black;
+  height: 5.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.nav--company-name {
+  color: #fff !important;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.nav--company-name:hover {
+  color: #ffc107 !important;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  color: #808080;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+  transition: border-bottom 0.2s, border-top 0.2s;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  color: #ffc107;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border-bottom: 2px solid #ffc107;
+  border-top: 2px solid #ffc107;
+}
+
+.nav__bar {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 45rem;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 1.3rem;
+  right: 3rem;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 75em) {
+  .nav__bar {
+    position: absolute;
+    top: 5.4rem;
+    left: -115%;
+    background-color: #000;
+    z-index: 100;
+    padding-left: 1.7rem;
+    width: 100%;
+    height: 30vh;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .nav__bar.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown__nav--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0.4rem;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  top: 2.8rem;
+  background-color: #f9f9f9;
+  min-width: 16rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown__content a {
+  color: black;
+  padding: 1.2rem 2rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown__content a:hover {
+  background-color: #ffc107;
+}
+
+.dropdown:hover .dropdown__content {
+  display: block;
+}
+
+.hero {
+  background-image: url(../../images/hero-brewlab.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+  background-attachment: fixed;
+  /* margin-top: 100rem; */
+
+  @media only screen and (max-width: 1000px) {
+    background-attachment: initial;
+  }
+}
+
+.hero h1 {
+  padding-top: 150px;
+  font-weight: 600;
+  margin-top: 5rem;
+  height: 90vh;
+  min-height: 650px;
+}
+
+.kits__img {
+  height: 320px;
+  width: 360px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.banner {
+  padding: 80px 0px;
+  margin-top: -5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.banner__img {
+  min-width: 480px;
+}
+
+.banner__img--bundles {
+  width: 83vw;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.banner__img--infographic {
+  width: 90vw;
+  height: auto;
+  margin: 50px auto 0 auto;
+  border-radius: 10px;
+}
