@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>BREW LAB</title>
+    <link rel="icon" href="./images/webicon.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/webicon.jpg" type="image/x-icon" />
+    
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              xl: '5px 3px 13px #888888',
+            },
+            colors: {
+              primaryColor: '#FFC107',
+              primaryColorDarker: '#ECB100'
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section>
+      <nav class="nav flex justify-between bg-black w-full text-white">
+        <div>
+          <a href="index.html" class="nav--company-name nav__link">BREW LAB</a>
+        </div>
+
+        <div class="nav__bar">
+          <p><a href="shop.html" class="nav__link">The Shop</a></p>
+
+          <div class="dropdown">
+            <div class="dropdown__nav--button">
+              <p><a href="lab.html" class="nav__link">The Lab &#9662;</a></p>
+            </div>
+            <div class="dropdown__content">
+              <a href="lab.html#bp">Beginner's Page</a>
+              <a href="lab.html#recipes">Recipes</a>
+            </div>
+          </div>
+
+          <p><a href="about.html" class="nav__link">About Us</a></p>
+          <p><a href="contact.html" class="nav__link">Contact Us</a></p>
+          <p><a href="faq.html" class="nav__link">FAQs</a></p>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Hero banner -->
+    <section class="hero">
+      <div class="hero-text-box">
+        <h1 class="pb-8 text-white"></h1>
+        <h2 class="pb-8 text-white"></h2>
+      </div>
+    </section>
+
+    <!-- Kits -->
+    <section class="flex items-center justify-center mt-32 mb-32">
+      <div class="text-[1.5rem] flex flex-col container mx-auto md:w-10/12 w-7/12">
+        <div class="mb-5 flex items-center gap-4">
+          <h3 class="text-[3rem]">Kits</h3>  
+          <a href="shop.html" role="button" class="bg-primaryColor hover:bg-primaryColorDarker text-[1.5rem] py-4 px-7 rounded-full shadow-xl">Go to <strong>The Shop</strong></a>
+        </div>
+        <div class="flex justify-center flex-wrap lg:justify-between gap-10">
+          <div class="text-[1.8rem]">
+            <img src="images/Beginner-Equipment-Kit.jpg" alt="Beginner's Equipment Kit" class="kits__img">
+            <p class="mt-5">Beginner's Equipment Kit</p>
+            <p><small>₱3500 per kit</small></p>
+          </div>
+          <div class="text-[1.8rem]">
+            <img src="images/Ingredients-Kit.jpg" alt="Ingredients Kit" class="kits__img">
+            <p class="mt-5">Ingredients Kit</p>
+            <p><small>₱550 per kit</small></p>
+          </div>
+          <div class="text-[1.8rem]">
+            <img src="images/bottleday.jpg" alt="Bottles Kit" class="kits__img">
+            <p class="mt-5">Bottles Kit</p>
+            <p><small>₱1900 per kit</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bundles Banner -->
+    <section class="banner">
+      <div>
+        <div>
+          <img src="images/BUNDLES-BANNER.jpg" alt="Bundles Banner" class="banner__img banner__img--bundles">
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="images/HOWTO-INFOGRAPHIC.jpg" alt="Bundles Banner" class="banner__img banner__img--infographic">
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
