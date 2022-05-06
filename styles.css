@@ -25,6 +25,19 @@ p {
   font-family: 'Poppins', sans-serif;
 }
 
+.section {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 75em) {
+  .section-fluid {
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 1080px;
+  }
+}
+
 .nav {
   font-size: 1.5rem;
   background-color: black;
@@ -250,4 +263,19 @@ p {
   width: 260px;
   border-radius: 5px;
   margin: 0px auto 10px auto;
+}
+
+.gifs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.gifs__img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
 }
