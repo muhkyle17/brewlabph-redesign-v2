@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>BREW LAB</title>
+    <link rel="icon" href="./images/webicon.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/webicon.jpg" type="image/x-icon" />
+    
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              xl: '5px 3px 13px #888888',
+              cards: '0px 9px 14px -2px rgba(0, 0, 0, 0.48)'
+            },
+            colors: {
+              primaryColor: '#FFC107',
+              primaryColorDarker: '#ECB100',
+              primaryGrey: '#6d6d6d'
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section>
+      <nav class="nav flex justify-between bg-black w-full text-white">
+        <div>
+          <a href="index.html" class="nav--company-name nav__link">BREW LAB</a>
+        </div>
+
+        <div class="nav__bar">
+          <p><a href="shop.html" class="nav__link">The Shop</a></p>
+
+          <div class="dropdown">
+            <div class="dropdown__nav--button">
+              <p><a href="lab.html" class="nav__link">The Lab &#9662;</a></p>
+            </div>
+            <div class="dropdown__content">
+              <a href="lab.html#bp">Beginner's Page</a>
+              <a href="lab.html#recipes">Recipes</a>
+            </div>
+          </div>
+
+          <p><a href="about.html" class="nav__link">About Us</a></p>
+          <p><a href="contact.html" class="nav__link">Contact Us</a></p>
+          <p><a href="faq.html" class="nav__link">FAQs</a></p>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="w-screen" id="herofaq">
+      <div class="flex flex-col justify-center h-screen min-h-[650px]">
+        <h1 class="text-white text-[9rem] font-[600]">FAQs</h1>
+        <h2 class="text-white text-[3rem] mt-[2rem]"> Have a question? Check our FAQs below.</h2>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

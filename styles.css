@@ -191,10 +191,6 @@ p {
   text-align: center;
   background-attachment: fixed;
   /* margin-top: 100rem; */
-
-  @media only screen and (max-width: 1000px) {
-    background-attachment: initial;
-  }
 }
 
 .hero h1 {
@@ -287,8 +283,11 @@ p {
   text-align: center;
   background-attachment: fixed;
 }
-@media only screen and (max-width: 1000px) {
-  #heroabout {
-    background-attachment: initial;
-  }
+
+#herofaq {
+  background-image: url(./images/hero-faq.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+  background-attachment: fixed;
 }
