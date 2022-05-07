@@ -279,3 +279,16 @@ p {
   border-style: none;
   width: 100%;
 }
+
+#heroabout {
+  background-image: url(../../images/hero-about.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+  background-attachment: fixed;
+}
+@media only screen and (max-width: 1000px) {
+  #heroabout {
+    background-attachment: initial;
+  }
+}
