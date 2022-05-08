@@ -25,6 +25,10 @@ p {
   font-family: 'Poppins', sans-serif;
 }
 
+li {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
 .section {
   max-width: 1140px;
   margin: 0 auto;
