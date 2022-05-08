@@ -50,7 +50,7 @@
   <body>
     <!-- Navbar -->
     <section>
-      <nav class="nav flex justify-between bg-black w-full text-white">
+      <nav class="nav flex justify-between bg-black w-full text-white z-50">
         <div>
           <a href="index.html" class="nav--company-name nav__link">BREW LAB</a>
         </div>
@@ -102,7 +102,7 @@
         <hr class="my-20" />
 
         <h3 class="text-5xl mb-5 text-black">Ordering Products</h3>
-    
+
         <div tabindex="0" class="collapse border rounded-md shadow">
           <input type="checkbox" class="peer" /> 
           <h3 class="p-10 collapse-title text-3xl text-black peer-checked:bg-[#F7F7F7] peer-checked:text-secondary-content bg-[#F7F7F7]">
@@ -125,6 +125,18 @@
                 <li class="pl-2">We’ll confirm your order and set your delivery date.</li>
                 <li class="pl-2">Receive your order on the delivery date and start brewing!</li>
               </ol>
+            </div>
+          </div>
+        </div>
+
+        <div tabindex="0" class="collapse border rounded-md shadow hover:bg-primaryColor">
+          <input type="checkbox" class="peer hover:bg-primaryColor" /> 
+          <h3 class="p-10 collapse-title text-3xl text-primary-content text-black peer-checked:bg-[#F7F7F7] peer-checked:text-secondary-content bg-[#F7F7F7]">
+            Can I order in bulk?
+          </h3>
+          <div class="collapse-content bg-white text-[1.6rem] text-primary-content peer-checked:bg-white peer-checked:text-black">
+            <div class="flex flex-col gap-3 py-10 px-4 font-thin">
+              <p>Definitely. Email us at <a class="text-blue-600 hover:underline" href="mailto:purchasing@brewlab.ph">purchasing@brewlab.ph</a> for inquiries.</p>
             </div>
           </div>
         </div>
