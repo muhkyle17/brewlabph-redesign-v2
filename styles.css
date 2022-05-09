@@ -295,3 +295,11 @@ li {
   text-align: center;
   background-attachment: fixed;
 }
+
+#herolab {
+  background-image: url(./images/hero-lab.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+  background-attachment: fixed;
+}
