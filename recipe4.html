@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>BREW LAB</title>
+    <link rel="icon" href="./images/webicon.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/webicon.jpg" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.3/dist/full.css" rel="stylesheet" type="text/css" />
+    
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              xl: '5px 3px 13px #888888',
+              cards: '0px 9px 14px -2px rgba(0, 0, 0, 0.48)'
+            },
+            colors: {
+              primaryColor: '#FFC107',
+              primaryColorDarker: '#ECB100',
+              primaryGrey: '#6d6d6d'
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section>
+      <nav class="nav flex justify-between bg-black w-full text-white z-50">
+        <div>
+          <a href="index.html" class="nav--company-name nav__link">BREW LAB</a>
+        </div>
+
+        <div class="nav__bar">
+          <p><a href="shop.html" class="nav__link">The Shop</a></p>
+
+          <div class="dropdown">
+            <div class="dropdown__nav--button">
+              <p><a href="lab.html" class="nav__link">The Lab &#9662;</a></p>
+            </div>
+            <div class="dropdown__content">
+              <a href="lab.html#bp">Beginner's Page</a>
+              <a href="lab.html#recipes">Recipes</a>
+            </div>
+          </div>
+
+          <p><a href="about.html" class="nav__link">About Us</a></p>
+          <p><a href="contact.html" class="nav__link">Contact Us</a></p>
+          <p><a href="faq.html" class="nav__link">FAQs</a></p>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Content -->
+    <section>
+      <div class="section section-fluid mt-[10rem] mb-10 text-black">
+        <div>  
+          <h1 class="text-6xl">English Dry Stout</h1>
+          <h6 class="text-2xl mt-4">Stouts are dark beers made using roasted malt or roasted barley, hops, water and yeast. Stouts were traditionally the generic term for the strongest or stoutest porters, typically 7% or 8%, produced by a brewery. Dry stouts are dark or rich in color, and often has a roasted or coffee-like taste.</h6>
+        </div>
+
+        <div class="border border-b-0 shadow-cards rounded-md mt-10">
+          
+          <div tabindex="0" class="collapse border-b">
+            <input type="checkbox" class="peer" />
+            <h3 class="p-10 collapse-title border-b text-3xl text-black peer-checked:bg-[#F7F7F7] peer-checked:text-secondary-content bg-[#F7F7F7]">Preparation</h3>
+            <div class="collapse-content bg-white text-2xl text-primary-content peer-checked:bg-white peer-checked:text-black">
+              <div class="flex flex-col gap-3 py-10 px-4 font-thin">
+                <ol class="flex flex-col gap-2 list-decimal px-14">
+                  <li class="pl-2">Take the contents of your kit out of the box. For Day 1, clean the following with dish soap:</li>
+                  <ul class="list-[circle] ml-12">
+                    <li>Glass Carboy</li>
+                    <li>Carboy Cap</li>
+                    <li>Blow-off tube (the smaller, loose tube)</li>
+                    <li>Digital thermometer (just the metal tip, NOT the whole thing)</li>
+                  </ul>
+                  <li class="pl-2">You’ll also need to prepare the following:</li>
+                  <ul class="list-[circle] ml-12">
+                    <li>A large kettle that will fit at least 12 liters of water</li>
+                    <li>A stirring spoon</li>
+                    <li>A funnel</li>
+                    <li>A strainer</li>
+                    <li>A large bag of ice (this will be used later to speed up cooling)</li>
+                  </ul>
+                  <li class="pl-2">In your carboy, fill it roughly halfway with water, and then add 10mL of StellarSan non-rinse sanitizer for every 5L of water. Cover the mouth with your hand and give it a gentle shake to make sure it touches all parts of the carboy. Leave it to the side.</li>
+                </ol>
+              </div>
+            </div>  
+          </div>
+          
+          <div tabindex="0" class="collapse border-b">
+            <input type="checkbox" class="peer" />
+            <h3 class="p-10 collapse-title border-b text-3xl text-black peer-checked:bg-[#F7F7F7] peer-checked:text-secondary-content bg-[#F7F7F7]">The Mash</h3>
+            <div class="collapse-content bg-white text-2xl text-primary-content peer-checked:bg-white peer-checked:text-black">
+              <div class="flex flex-col gap-3 py-10 px-4 font-thin">
+                <ol class="flex flex-col gap-2 list-decimal px-14">
+                  <li>Sanitize a kettle and place 10.5 liters of water. Raise the temperature of the water to 72°C.</li>
+                  <li>Empty your bag of Pilsner Malt (Base Malt) and Roasted Barley Malt (Specialty Malt) into your brew-in-a-bag (BIAB). Place the bag into the water.
+                  </li>
+                  <li>Stir your malts for a few minutes until the mash looks like oatmeal.</li>
+                  <li>Cover your kettle with a lid and shut off the heat. Let the mash steep at a temperature of 68°C for 60 minutes.</li>
+                  <li>You will now need to “mash out.” Turn on the heat and raise the temperature to 75°C. Keep stirring the mash for 10 minutes.</li>
+                  <li>Lift the grains from out of the mash. Pour a cup of hot water over the mash to drain all flavor from the grains.</li>
+                  <li>You may throw away the used grains. You can reuse the BIAB if you wish.</li>
+                  <li>At this point, you’re left with a sugary liquid called “wort.”</li>
+                </ol>
+              </div>
+            </div>  
+          </div>
+          
+          <div tabindex="0" class="collapse border-b">
+            <input type="checkbox" class="peer" />
+            <h3 class="p-10 collapse-title border-b text-3xl text-black peer-checked:bg-[#F7F7F7] peer-checked:text-secondary-content bg-[#F7F7F7]">The Boil</h3>
+            <div class="collapse-content bg-white text-2xl text-primary-content peer-checked:bg-white peer-checked:text-black">
+              <div class="flex flex-col gap-3 py-10 px-4 font-thin">
+                <ol class="flex flex-col gap-2 list-decimal px-14">
+                  <li>Bring the wort up to a boil (100°C) and close the lid.</li>
+                  <li>Once the wort starts boiling, start your timer. The boiling process will take 60 minutes. If at any point you see your wort starting to bubble and flow over, spray the bubbles with filtered water.</li>
+                  <li>After 30 minutes, drop ½ of your Fuggles hops into the wort and close the lid.</li>
+                  <li>While waiting, prepare your sanitizer solution. Fill a container (a large bowl or even a clean kitchen sink works) with water and StellarSan (you may reuse the sanitizing solution from your carboy), and put in your funnel, strainer, carboy cap, and blow-off tube.</li>
+                  <li>After 55 more minutes, drop the rest of your Fuggles hops into the wort and close the lid.</li>
+                  <li>While waiting for the last 5 minutes, prepare an ice bath in your kitchen sink. Load it up with ice and cold water. To speed up the cooling process, you can even sprinkle salt on the ice to make the ice bath colder.</li>
+                </ol>
+              </div>
+            </div>  
+          </div>
+          
+          <div tabindex="0" class="collapse border-b">
+            <input type="checkbox" class="peer" />
+            <h3 class="p-10 collapse-title border-b text-3xl text-black peer-checked:bg-[#F7F7F7] peer-checked:text-secondary-content bg-[#F7F7F7]">Adding the Yeast</h3>
+            <div class="collapse-content bg-white text-2xl text-primary-content peer-checked:bg-white peer-checked:text-black">
+              <div class="flex flex-col gap-3 py-10 px-4 font-thin">
+                <ol class="flex flex-col gap-2 list-decimal px-14">
+                  <li>Once the 60-minute boil is over, transfer your kettle into the ice bath and lower the wort’s temperature to around 23°C. You can use a sanitized stirring spoon, so long as you’re careful about sanitation. At this point, ensure that everything that comes in contact with the wort is thoroughly sanitized with your StellarSan. Any bacteria that comes in contact with your yeast can produce off flavors or even turn your beer sour.</li>
+                  <li>Once your wort reaches 23°C, transfer your wort into the carboy using the funnel and strainer. The strainer will lessen the amount of solid material that will be left over in the beer. Fill the carboy only up to the 1-gallon mark. You need to leave room for the wort to ferment and produce CO2.</li>
+                  <li>Swirl the carboy carefully for 30 seconds to one minute to oxygenate the wort.</li>
+                  <li>Once your wort is in the carboy, open the included bag of SafAle S-04 yeast and empty the bag into the carboy. Remember to sanitize anything that will come in contact with the yeast.</li>
+                </ol>
+              </div>
+            </div>  
+          </div>
+          
+          <div tabindex="0" class="collapse border-b">
+            <input type="checkbox" class="peer" />
+            <h3 class="p-10 collapse-title border-b text-3xl text-black peer-checked:bg-[#F7F7F7] peer-checked:text-secondary-content bg-[#F7F7F7]">Last Steps for Brew Day</h3>
+            <div class="collapse-content bg-white text-2xl text-primary-content peer-checked:bg-white peer-checked:text-black">
+              <div class="flex flex-col gap-3 py-10 px-4 font-thin">
+                <ol class="flex flex-col gap-2 list-decimal px-14">
+                  <li>Place your screw cap on the carboy, and place one end of the blow-off tube in the hole. Place the other end of the blow-off tube in a container containing a solution of water and StellarSan. Place enough water and StellarSan to ensure that the tube is submerged in the solution. Both ends of the tube must be airtight and not allow any air to enter the carboy.</li>
+                  <li>Store the carboy in a cool, dark area away from any light and heat for two weeks.</li>
+                  <li>After three days, you may remove the blow-off tube and replace it with the three-piece airlock. Make sure that you sanitize the airlock and all its pieces with StellarSan before connecting to the screw cap.</li>
+                </ol>
+              </div>
+            </div>  
+          </div>
+          
+          <div tabindex="0" class="collapse border-b">
+            <input type="checkbox" class="peer" />
+            <h3 class="p-10 collapse-title border-b text-3xl text-black peer-checked:bg-[#F7F7F7] peer-checked:text-secondary-content bg-[#F7F7F7]">Bottling (After 2 Weeks)</h3>
+            <div class="collapse-content bg-white text-2xl text-primary-content peer-checked:bg-white peer-checked:text-black">
+              <div class="flex flex-col gap-3 py-10 px-4 font-thin">
+                <ol class="flex flex-col gap-2 list-decimal px-14">
+                  <li>Start out by bringing out the red Emily bottle capper. You’ll also need to sanitize the following with StellarSan:</li>
+                  <ul class="list-[circle] ml-12">
+                    <li>Auto-siphon</li>
+                    <li>Siphon tube (that comes with your auto-siphon)</li>
+                    <li>Bottle filler</li>
+                    <li>Bottles (each one has to be properly sanitized inside and out!)</li>
+                    <li>Bottle caps</li>
+                    <li>Connect the auto-siphon, bottle filler, and tube. For this process to work, you’ll need to elevate your carboy to a higher level than your bottles. We find that putting the carboy on the table and the bottles on the floor works fine.</li>
+                  </ul>
+                  <li>Bring out your (sanitized) bottles, open up your carboy, and drop in your priming sugar (it’s included as a small packet). Stir very gently to get in as little oxygen as possible.</li>
+                  <li>Once mixed in, slowly insert the auto-siphon into the liquid. Try not to let the auto-siphon touch the layer of sediment at the bottom of the carboy - that’s called “trub” and you want to get as little of it in your bottles as possible.</li>
+                  <li>Place the bottle filler in your first bottle, pump the auto-siphon a few times and the beer should flow through the tube. To get the beer flowing into the bottle, push the tip straight down on the bottom of the bottle, and fill to the top. When you remove the bottle filler, you’ll get the perfect liquid level in your bottle. Repeat the process until all bottles are filled up.</li>
+                  <li>Properly place the sanitized bottle caps on your bottles and put your Emily bottle capper on top of it. Place it right on top and firmly bring the two arms down. Your bottle should be sealed and ready to carbonate.</li>
+                  <li>Leave the bottles upright in a dark and dry place, away from light and heat. They need to be set aside for two more weeks, in a process called “bottle conditioning”.</li>
+                </ol>
+              </div>
+            </div>  
+          </div>
+          
+          <div tabindex="0" class="collapse border-b">
+            <input type="checkbox" class="peer" />
+            <h3 class="p-10 collapse-title border-b text-3xl text-black peer-checked:bg-[#F7F7F7] peer-checked:text-secondary-content bg-[#F7F7F7]">Opening</h3>
+            <div class="collapse-content bg-white text-2xl text-primary-content peer-checked:bg-white peer-checked:text-black">
+              <div class="flex flex-col gap-3 py-10 px-4 font-thin">
+                <ol class="flex flex-col gap-2 list-decimal px-14">
+                  <li>The last section of our instructions is opening your beer! While we did say it takes two weeks to bottle condition, you could try a bottle one week in if you really can’t wait.</li>
+                  <li>Place the bottles in a refrigerator one day before drinking for best results.</li>
+                  <li>We recommend pouring your beer out into a glass to allow the head to form. Just make sure you do NOT pour out the last inch or so, as some trub may have formed at the bottom of your bottles.</li>
+                </ol>
+                <h2 class="leading-9">
+                  Congratulations, you’ve brewed beer at home! We know it’s not the easiest thing to do, but we love the feeling of fulfillment after tasting the fresh, cold beer. Pat yourself on the back, crack a bottle open, and relax. You did it!
+                  <br>
+                  Don’t worry, it does get easier over time. Once you practice with a couple batches, you’ll find that it’s easier than you remember. Don’t forget, BREW LAB is your brewing partner. If you need any help or advice regarding your brew, contact us at <a class="text-blue-600 hover:underline" href="mailto:care@brewlab.ph">care@brewlab.ph</a>.
+                </h2>
+              </div>
+            </div>  
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider section-fluid my-[3rem] border-0 bg-[#EAEAEA] h-[0.1rem]">
+
+    <!-- Footer -->
+    <footer class="section section-fluid hidden md:block">
+      <div class="flex gap-[22rem]">
+        <div class="flex flex-col gap-5">
+          <h4 class="font-bold text-2xl text-primaryGrey hover:text-black"><a href="index.html">BREW LAB</a></h4>
+          <ul class="flex flex-col gap-3 text-[1.4rem] text-primaryGrey">
+            <li><a class="hover:text-black" href="shop.html">The Shop</a></li>
+            <li><a class="hover:text-black" href="lab.html">The Lab</a></li>
+            <li><a class="hover:text-black" href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="flex flex-col gap-5">
+          <h4 class="font-bold text-2xl text-primaryGrey hover:text-black"><a href="lab.html#recipes">Recipes</a></h4>
+          <ul class="flex flex-col gap-3 text-[1.4rem] text-primaryGrey">
+            <li><a class="hover:text-black" href="recipe1.html">German Hefeweizen</a></li>
+            <li><a class="hover:text-black" href="recipe2.html">Belgian Abbey Beer</a></li>
+            <li><a class="hover:text-black" href="recipe3.html">English Dry Stout</a></li>
+            <li><a class="hover:text-black" href="recipe4.html">India Pale Ale</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <h4 class="flex gap-8 font-bold text-2xl text-primaryGrey">
+            <a class="hover:text-black" href="https://www.facebook.com/brewlab.ph"><i class="fab fa-facebook-f"></i></a>
+            <a class="hover:text-black" href="https://www.instagram.com/brewlab.ph"><i class="fab fa-instagram"></i></a>
+          </h4>
+          <ul class="flex flex-col gap-3 text-[1.4rem] text-primaryGrey">
+            <li><a class="hover:text-black" href="faq.html">FAQs</a></li>
+            <li><a class="hover:text-black" href="contact.html">Contact Us</a></li>
+            <li><a class="hover:text-black" href="terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="divider section-fluid mt-10 border-0 bg-[#EAEAEA] h-[0.1rem]">
+    </footer>
+
+    <div class="section section-fluid mt-2 mb-20 block">
+      <div>
+        <small class="text-2xl text-primaryGrey">© BREW LAB PH</small>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
