@@ -309,3 +309,11 @@ li {
   background-size: cover;
   background-position: center;
 }
+
+#heroshop {
+  background-image: url(./images/hero-shop.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+  background-attachment: fixed;
+}
