@@ -47,7 +47,7 @@
   <body>
     <!-- Navbar -->
     <section>
-      <nav class="nav flex justify-between bg-black w-full text-white">
+      <nav class="nav flex justify-between bg-black w-full text-white z-50">
         <div>
           <a href="index.html" class="nav--company-name nav__link">BREW LAB</a>
         </div>
@@ -87,25 +87,53 @@
     </section>
 
     <!-- Content -->
-    <section class="flex mt-28">
+    <section class="flex flex-row mt-28 justify-center xl:justify-start">
 
       <!-- Side Menu -->
-      <aside class="w-1/5 text-3xl">
+      <div class="side-menu w-1/5 text-3xl">
         <div class="flex flex-col gap-12 items-start justify-start px-20">
-          <h5 class="transition duration-300 ease-in-out hover:ease-in-out border-b-2 border-transparent hover:border-b-2 pb-[0.5rem] hover:border-primaryColor">
+          <h5 class="transition duration-300 ease-in-out hover:ease-in-out border-b-2 border-transparent hover:border-b-2 pb-[0.3rem] hover:border-primaryColor">
             <span><a class="" href="#bundles" role="button">Bundles</a></span>
           </h5>
-          <h5 class="transition duration-300 ease-in-out hover:ease-in-out  border-b-2 border-transparent hover:border-b-2 pb-[0.5rem] hover:border-primaryColor">
+          <h5 class="transition duration-300 ease-in-out hover:ease-in-out  border-b-2 border-transparent hover:border-b-2 pb-[0.3rem] hover:border-primaryColor">
             <span><a class="" href="#main-kits" role="button">Equipments Kits</a></span>
           </h5>
-          <h5 class="transition duration-300 ease-in-out hover:ease-in-out  border-b-2 border-transparent hover:border-b-2 pb-[0.5rem] hover:border-primaryColor">
+          <h5 class="transition duration-300 ease-in-out hover:ease-in-out  border-b-2 border-transparent hover:border-b-2 pb-[0.3rem] hover:border-primaryColor">
             <span><a class="" href="#loose-equipment" role="button">Loose Equipment</a></span>
           </h5>
         </div>
-      </aside>
+      </div>
 
       <!-- Main Shop Items -->
-      <main class="w-4/5 h-screen bg-orange-400">
+      <!-- <main class="max-w-[1140px] my-0 mx-auto px-[24px] xl:w-3/4 bg-orange-400"> -->
+      <main class="w-[1140px] px-[24px] xl:w-3/4">
+        <!-- Bundles -->
+        <div class="" id="bundles">
+          <div class="mb-5">
+            <h3 class="text-5xl">Bundles</h3>
+          </div>
+          
+          <div class="flex flex-col gap-6 items-center justify-center text-2xl font-thin">
+            <img src="images/BUNDLES-BANNER.jpg" alt="Brew Lab Bundle" class="rounded-xl">
+            <h3 class="text-3xl mt-5">Brew Lab Bundle</h3>
+            <p>₱5,450.00</p>
+            <p class="mt-5"><span><a class="bg-primaryColor hover:bg-primaryColorDarker py-5 px-12 rounded-full text-black" href="bundle.html" role="button">View product</a></span></p>
+          </div>
+        </div>
+        
+        <!-- Bundles -->
+        <div class="" id="bundles">
+          <div class="mb-5">
+            <h3 class="text-5xl">Bundles</h3>
+          </div>
+          
+          <div class="flex flex-col gap-6 items-center justify-center text-2xl font-thin">
+            <img src="images/BUNDLES-BANNER.jpg" alt="Brew Lab Bundle" class="rounded-xl">
+            <h3 class="text-3xl mt-5">Brew Lab Bundle</h3>
+            <p>₱5,450.00</p>
+            <p class="mt-5"><span><a class="bg-primaryColor hover:bg-primaryColorDarker py-5 px-12 rounded-full text-black" href="bundle.html" role="button">View product</a></span></p>
+          </div>
+        </div>
 
       </main>
 

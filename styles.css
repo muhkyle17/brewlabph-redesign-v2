@@ -317,3 +317,36 @@ li {
   text-align: center;
   background-attachment: fixed;
 }
+
+#bundles::before {
+  content: '';
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
+#main-kits::before {
+  content: '';
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
+#loose-equipment::before {
+  content: '';
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
+.side-menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  left: 0;
+
+  border: 2px solid black;
+}
