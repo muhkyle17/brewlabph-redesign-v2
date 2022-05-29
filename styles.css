@@ -372,3 +372,16 @@ li {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
+.loose-equip__img {
+  height: 250px;
+  width: 320px;
+  /* max-width: 15rem; */
+  margin: 0px auto 20px auto;
+  object-fit: fill;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
