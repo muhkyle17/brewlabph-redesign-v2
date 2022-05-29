@@ -363,6 +363,7 @@ li {
 .kits__img {
   height: 280px;
   width: 320px;
+  /* min-width: 200px; */
   margin: 0px auto 20px auto;
   -o-object-fit: cover;
   object-fit: cover;

@@ -106,7 +106,7 @@
         </div>
       </section> -->
 
-      <aside class="//side-menu w-1/5 text-3xl fixed top-36">
+      <aside class="//side-menu w-1/5 text-3xl fixed top-36 hidden xl:block">
         <div class="flex flex-col gap-12 items-start justify-start px-20">
           <h5 class="self-start transition duration-300 ease-in-out hover:ease-in-out border-b-2 border-transparent hover:border-b-2 pb-[0.3rem] hover:border-primaryColor">
             <span><a class="" href="#bundles" role="button">Bundles</a></span>
@@ -122,7 +122,7 @@
 
       <!-- Main Shop Items -->
 
-      <main class="w-[1140px] px-[24px] xl:w-3/4 ml-[24rem]">
+      <main class="w-[1140px] px-[24px] xl:w-3/4 xl:ml-[24rem]">
         <!-- Bundles -->
         <div class="" id="bundles">
           <div class="mb-5">
@@ -140,12 +140,12 @@
         <hr class="mt-20">
 
         <!-- Lab Kits -->
-        <div class="mt-20" id="main-kits">
+        <div class="section section-fluid mt-20" id="main-kits">
           <div class="mb-5">
             <h3 class="text-5xl">Lab Kits</h3>
           </div>
           
-          <div class="flex gap-12">
+          <div class="flex flex-col md:flex-row gap-12">
             <div class="flex flex-col gap-6 items-center justify-center text-2xl font-thin">
               <img src="images/Beginner-Equipment-Kit.jpg" alt="Beginner's Equipment Kit" class="kits__img">
               <h3 class="text-3xl">Beginner's Equipment Kit</h3>
@@ -172,12 +172,12 @@
         <hr class="mt-20">
 
         <!-- Loose Equipment -->
-        <div class="mt-20" id="loose-equipment">
+        <div class="section section-fluid mt-20" id="loose-equipment">
           <div class="mb-5">
             <h3 class="text-5xl">Loose Equipment</h3>
           </div>
         
-          <div class="flex gap-12">
+          <div class="flex flex-col justify-center items-center md:flex-row flex-wrap lg:flex-nowrap gap-12">
             <div class="flex flex-col gap-6 items-center justify-center text-2xl font-thin">
               <img src="images/asset_shop_Carboy.jpg"" alt="Carboy" class="loose-equip__img">
               <h3 class="text-3xl">Carboy + Cap</h3>
@@ -187,7 +187,7 @@
 
             <div class="flex flex-col gap-6 items-center justify-center text-2xl font-thin">
               <img src="images/asset_shop_autosiphonbottlefiller.png"" alt="Auto-siphon and Bottle Filler" class="loose-equip__img">
-              <h3 class="text-3xl">Auto-Siphon + Bottle Filler</h3>
+              <h3 class="text-2xl xl:text-3xl">Auto-Siphon + Bottle Filler</h3>
               <p>₱700.00</p>
               <p class="mt-5"><span><a class="bg-primaryColor hover:bg-primaryColorDarker py-5 px-12 rounded-full text-black" href="siphon.html" role="button">View product</b></a></span></p>
             </div>
@@ -253,7 +253,7 @@
       <hr class="divider section-fluid mt-10">
     </footer>
 
-    <div class="section section-fluid mt-2 mb-20 block ">
+    <div class="section section-fluid mt-[5rem] md:mt-2 mb-20 block ">
       <div>
         <small class="text-2xl text-primaryGrey">© BREW LAB PH</small>
       </div>
