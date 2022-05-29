@@ -350,7 +350,7 @@ li {
   margin-top: 10rem;
 }
 
-.side-menu {
+/* .side-menu {
   position: sticky;
   position: -webkit-sticky;
   top: 100px;
@@ -358,4 +358,17 @@ li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+} */
+
+.kits__img {
+  height: 280px;
+  width: 320px;
+  margin: 0px auto 20px auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }

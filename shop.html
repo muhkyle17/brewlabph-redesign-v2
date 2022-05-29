@@ -79,35 +79,50 @@
     </section>
 
     <!-- Hero banner -->
-    <section class="w-screen" id="heroshop">
+    <!-- <section class="w-screen" id="heroshop">
       <div class="flex flex-col justify-center h-screen min-h-[650px]">
         <h1 class="text-white text-[9rem] font-[600]">THE SHOP</h1>
         <h2 class="text-white text-[3rem] mt-[2rem]">Let's get you started on your journey to brew great beer at home.</h2>
       </div>
-    </section>
+    </section> -->
 
     <!-- Content -->
     <!-- <section class="main-content">-->
-    <section class="flex flex-row mt-28 justify-center xl:justify-start">
+    <section class="flex flex-row mt-36 justify-center xl:justify-start">
 
       <!-- Side Menu -->
-      <div class="side-menu w-1/5 text-3xl">
+
+      <!-- <section class="side-menu shop-section">
+        <div class="side-menu-container">
+          <h5>
+            <span><a class="side-menu__links" href="#bundles" role="button">Bundles</a></span>
+          </h5>
+          <h5>
+            <span><a class="side-menu__links" href="#main-kits" role="button">Equipments Kits</a></span>
+          </h5>
+          <h5>
+            <span><a class="side-menu__links" href="#loose-equipment" role="button">Loose Equipment</a></span>
+          </h5>
+        </div>
+      </section> -->
+
+      <aside class="//side-menu w-1/5 text-3xl fixed top-36">
         <div class="flex flex-col gap-12 items-start justify-start px-20">
-          <h5 class="transition duration-300 ease-in-out hover:ease-in-out border-b-2 border-transparent hover:border-b-2 pb-[0.3rem] hover:border-primaryColor">
+          <h5 class="self-start transition duration-300 ease-in-out hover:ease-in-out border-b-2 border-transparent hover:border-b-2 pb-[0.3rem] hover:border-primaryColor">
             <span><a class="" href="#bundles" role="button">Bundles</a></span>
           </h5>
-          <h5 class="transition duration-300 ease-in-out hover:ease-in-out  border-b-2 border-transparent hover:border-b-2 pb-[0.3rem] hover:border-primaryColor">
+          <h5 class="self-start transition duration-300 ease-in-out hover:ease-in-out  border-b-2 border-transparent hover:border-b-2 pb-[0.3rem] hover:border-primaryColor">
             <span><a class="" href="#main-kits" role="button">Equipments Kits</a></span>
           </h5>
-          <h5 class="transition duration-300 ease-in-out hover:ease-in-out  border-b-2 border-transparent hover:border-b-2 pb-[0.3rem] hover:border-primaryColor">
+          <h5 class="self-start transition duration-300 ease-in-out hover:ease-in-out  border-b-2 border-transparent hover:border-b-2 pb-[0.3rem] hover:border-primaryColor">
             <span><a class="" href="#loose-equipment" role="button">Loose Equipment</a></span>
           </h5>
         </div>
-      </div>
+      </aside>
 
       <!-- Main Shop Items -->
 
-      <main class="w-[1140px] px-[24px] xl:w-3/4">
+      <main class="w-[1140px] px-[24px] xl:w-3/4 ml-[24rem]">
         <!-- Bundles -->
         <div class="" id="bundles">
           <div class="mb-5">
@@ -121,6 +136,39 @@
             <p class="mt-5"><span><a class="bg-primaryColor hover:bg-primaryColorDarker py-5 px-12 rounded-full text-black" href="bundle.html" role="button">View product</a></span></p>
           </div>
         </div>
+
+        <hr class="mt-20">
+
+        <!-- Lab Kits -->
+        <div class="mt-20" id="main-kits">
+          <div class="mb-5">
+            <h3 class="text-5xl">Lab Kits</h3>
+          </div>
+          
+          <div class="flex gap-12">
+            <div class="flex flex-col gap-6 items-center justify-center text-2xl font-thin">
+              <img src="images/Beginner-Equipment-Kit.jpg" alt="Beginner's Equipment Kit" class="kits__img">
+              <h3 class="text-3xl">Beginner's Equipment Kit</h3>
+              <p>₱3,500.00</p>
+              <p class="mt-5"><span><a class="bg-primaryColor hover:bg-primaryColorDarker py-5 px-12 rounded-full text-black" href="beginners.html" role="button">View product</b></a></span></p>
+            </div>
+          
+            <div class="flex flex-col gap-6 items-center justify-center text-2xl font-thin">
+              <img src="images/Bottles-Kit.jpg" alt="Bottles Kit" class="kits__img">
+              <h3 class="text-3xl">Bottles Kit</h3>
+              <p>₱1,900.00</p>
+              <p class="mt-5"><span><a class="bg-primaryColor hover:bg-primaryColorDarker py-5 px-12 rounded-full text-black" href="bottles.html" role="button">View product</b></a></span></p>
+            </div>
+
+            <div class="flex flex-col gap-6 items-center justify-center text-2xl font-thin">
+              <img src="images/asset_shop_ingredientskits.jpg" alt="Flavor Kits" class="kits__img">
+              <h3 class="text-3xl">Ingredients Kit Flavors</h3>
+              <p>₱550.00</p>
+              <p class="mt-5"><span><a class="bg-primaryColor hover:bg-primaryColorDarker py-5 px-12 rounded-full text-black" href="ingredients.html" role="button">View product</b></a></span></p>
+            </div>
+          </div>
+        </div>
+
       </main>
 
     </section>
