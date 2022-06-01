@@ -342,6 +342,22 @@ li {
   visibility: hidden;
 }
 
+#bp::before {
+  content: '';
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
+#recipes::before {
+  content: '';
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
 .main-content {
   display: flex;
   justify-content: space-around;
