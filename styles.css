@@ -386,3 +386,32 @@ li {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
+.bundles__img {
+  /* height: 18rem; */
+  height: auto;
+  /* max-width: 100%; */
+  width: 100%;
+  max-width: 1460px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 99px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.bundles-flavor__img {
+  width: 100%;
+  height: auto;
+  /* max-width: 15rem; */
+  margin: 0px auto 20px auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
