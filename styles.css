@@ -486,3 +486,14 @@ li {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
+.stellar_img {
+  width: 40rem;
+  min-width: 10%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
