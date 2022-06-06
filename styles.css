@@ -442,3 +442,14 @@ li {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
+.bottles_img {
+  width: 400px;
+  min-width: 200px;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
