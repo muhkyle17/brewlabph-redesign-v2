@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>BREW LAB</title>
+    <link rel="icon" href="./images/webicon.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/webicon.jpg" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.3/dist/full.css" rel="stylesheet" type="text/css" />
+    
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              xl: '5px 3px 13px #888888',
+              cards: '0px 9px 14px -2px rgba(0, 0, 0, 0.48)'
+            },
+            colors: {
+              primaryColor: '#FFC107',
+              primaryColorDarker: '#ECB100',
+              primaryGrey: '#6d6d6d'
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section>
+      <nav class="nav flex justify-between bg-black w-full text-white z-50">
+        <div>
+          <a href="index.html" class="nav--company-name nav__link">BREW LAB</a>
+        </div>
+
+        <div class="nav__bar">
+          <p><a href="shop.html" class="nav__link">The Shop</a></p>
+
+          <div class="dropdown">
+            <div class="dropdown__nav--button">
+              <p><a href="lab.html" class="nav__link">The Lab &#9662;</a></p>
+            </div>
+            <div class="dropdown__content">
+              <a href="lab.html#bp">Beginner's Page</a>
+              <a href="lab.html#recipes">Recipes</a>
+            </div>
+          </div>
+
+          <p><a href="about.html" class="nav__link">About Us</a></p>
+          <p><a href="contact.html" class="nav__link">Contact Us</a></p>
+          <p><a href="faq.html" class="nav__link">FAQs</a></p>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </section>
+
+    <aside class="absolute xl:fixed top-[9rem] left-9">
+      <a href="shop.html" class="text-2xl bg-primaryColor hover:bg-primaryColorDarker py-4 px-14 rounded-full text-black">Back to Shop</a>
+    </aside>
+
+    <!-- Content -->
+    <section class="section section-fluid mt-[13rem] px-[90px] text-black">
+      <div class="flex flex-col md:flex-row gap-10">
+        <img src="images/asset_shop_ingredientskits.jpg" alt="Ingredients Kits" class="bottles_img"
+        />
+        <div class="mt-5">
+          <h3 class="text-5xl">Ingredients Kit</h3>
+          <p class="text-2xl font-light mt-6">₱550.00 per Kit</p>
+          <div style="margin-top: 13px;" id="product-component-1633591747773"></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-5 mt-12 mb-6">
+        <h3 class="text-5xl">Product Details</h3>
+        <hr />
+        <p class="text-2xl leading-10 font-light">
+          Our Ingredients Kits come complete with all the ingredients needed to
+          brew a 1-gallon batch of beer (roughly 8-10 330mL bottles). Each kit
+          includes base malts, specialty malts, hops, yeast, priming sugar, and
+          bottle caps. All ingredients are pre-measured and separately packed to
+          ensure an easy brewing experience.
+        </p>
+        <p class="text-2xl leading-10 font-light">
+          Once you have the necessary equipment (if you got a Beginner’s
+          Equipment Kit, you’re good to go), these Ingredients Kits serve as
+          refills for each succeeding batch of beer you want to brew.
+        </p>
+        <p class="text-2xl leading-10 font-light">As of May 2021, we have four beer styles available:</p>
+        <ul class="text-2xl leading-10 font-light list-disc">
+          <li class="ml-16">Belgian Abbey Beer</li>
+          <li class="ml-16">German Hefeweizen</li>
+          <li class="ml-16">English Dry Stout</li>
+          <li class="ml-16">India Pale Ale (our newest flavor)</li>
+        </ul>
+        <p class="text-2xl leading-10 font-light">
+          <strong class="text-3xl font-bold">NOTE:</strong> On top of an Ingredients Kit, you'll need a set
+          of beer brewing equipment to be able to brew your own beer.
+        </p>
+        <p class="text-2xl leading-10 font-light">Check it out <a class="text-blue-600 hover:text-blue-900 hover:underline" href="beginners.html">here</a>.</p>
+      </div>
+
+      <h2 class="mt-12 mb-6 text-5xl">Flavors</h2>
+        <div class="flex flex-col md:flex-row gap-10">
+          <div>
+            <img src="images/belg.jpg"" alt="Belgian Abbey Beer"
+            class="bundles-flavor__img">
+          </div>
+
+          <div>
+            <img
+              src="images/hefe.jpg"
+              alt="German Hefeweizen"
+              class="bundles-flavor__img"
+            />
+          </div>
+
+          <div>
+            <img
+              src="images/ENG.jpg"
+              alt="English Dry Stout"
+              class="bundles-flavor__img"
+            />
+          </div>
+
+          <div>
+            <img
+              src="images/ipa.jpeg"
+              alt="India Pale Ale"
+              class="bundles-flavor__img"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <h5 class="text-4xl font-bold">Belgian Abbey Beer</h5>
+          <p class="text-2xl leading-10 font-light">
+            Abbey beers are produced in the styles made famous by Belgian Trappist
+            monks, but are not brewed within a monastery. Abbey beers produce a
+            range of spicy and fruity flavors, many with strong alcohol contents
+            ranging from 6% to 9% alcohol by volume (ABV).
+          </p>
+          <hr />
+          <h5 class="text-4xl font-bold">German Hefeweizen</h5>
+          <p class="text-2xl leading-10 font-light">
+            Hefeweizen beers are a type of beer that is made up of at least 50%
+            wheat. These beers are sweet and fruity, and have hints of banana and
+            clove flavors. Due to the wheat, it is a rather heavy beer and has a
+            full body with high carbonation.
+          </p>
+          <hr />
+          <h5 class="text-4xl font-bold">English Dry Stout</h5>
+          <p class="text-2xl leading-10 font-light">
+            Stouts are dark beers made using roasted malt or roasted barley, hops,
+            water and yeast. Stouts were traditionally the generic term for the
+            strongest or "stoutest" porters produced by a brewery - typically 7%
+            or 8% alcohol by volume (ABV). Dry stouts are dark and rich in color,
+            and often have a roasted coffee-like taste.
+          </p>
+          <hr />
+          <h5 class="text-4xl font-bold">India Pale Ale</h5>
+          <p class="text-2xl leading-10 font-light">
+            India Pale Ales (IPAs) are a style of beer that uses significantly
+            more hops than other ales. The additional hop content provides a ton
+            of aromatics balanced with a kick of bitterness, creating a
+            refreshingly spicy and citrusy beer. Our IPA will give you a beer
+            between 7-8% alcohol by volume (ABV).
+          </p>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="section section-fluid px-[90px] mt-28 hidden md:block">
+      <!-- <hr class="divider border-0 bg-[#EAEAEA] mb-10 h-[0.1rem]"> -->
+      <hr class="border-0 bg-[#EAEAEA] mb-10 h-[0.1rem]">
+      <div class="flex gap-[22rem]">
+        <div class="flex flex-col gap-5">
+          <h4 class="font-bold text-2xl text-primaryGrey hover:text-black"><a href="index.html">BREW LAB</a></h4>
+          <ul class="flex flex-col gap-3 text-[1.4rem] text-primaryGrey">
+            <li><a class="hover:text-black" href="shop.html">The Shop</a></li>
+            <li><a class="hover:text-black" href="lab.html">The Lab</a></li>
+            <li><a class="hover:text-black" href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="flex flex-col gap-5">
+          <h4 class="font-bold text-2xl text-primaryGrey hover:text-black"><a href="lab.html#recipes">Recipes</a></h4>
+          <ul class="flex flex-col gap-3 text-[1.4rem] text-primaryGrey">
+            <li><a class="hover:text-black" href="recipe1.html">German Hefeweizen</a></li>
+            <li><a class="hover:text-black" href="recipe2.html">Belgian Abbey Beer</a></li>
+            <li><a class="hover:text-black" href="recipe3.html">English Dry Stout</a></li>
+            <li><a class="hover:text-black" href="recipe4.html">India Pale Ale</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <h4 class="flex gap-8 font-bold text-2xl text-primaryGrey">
+            <a class="hover:text-black" href="https://www.facebook.com/brewlab.ph"><i class="fab fa-facebook-f"></i></a>
+            <a class="hover:text-black" href="https://www.instagram.com/brewlab.ph"><i class="fab fa-instagram"></i></a>
+          </h4>
+          <ul class="flex flex-col gap-3 text-[1.4rem] text-primaryGrey">
+            <li><a class="hover:text-black" href="faq.html">FAQs</a></li>
+            <li><a class="hover:text-black" href="contact.html">Contact Us</a></li>
+            <li><a class="hover:text-black" href="terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <hr class="divider section-fluid mt-10 border-0 bg-[#EAEAEA] h-[0.1rem]"> -->
+      <hr class="mt-10 border-0 bg-[#EAEAEA] h-[0.1rem]">
+    </footer>
+
+    <div class="section section-fluid px-[90px] mt-2 mb-20 block mt-[5rem] md:mt-3">
+      <div>
+        <small class="text-2xl text-primaryGrey">© BREW LAB PH</small>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      (function () {
+        var scriptURL =
+          'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+        function loadScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = scriptURL;
+          (
+            document.getElementsByTagName('head')[0] ||
+            document.getElementsByTagName('body')[0]
+          ).appendChild(script);
+          script.onload = ShopifyBuyInit;
+        }
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: 'brew-lab-philippines.myshopify.com',
+            storefrontAccessToken: '4c2b3f5c77f179fb8922fba7f688cbcc',
+          });
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('product', {
+              id: '7005879926942',
+              node: document.getElementById('product-component-1633591747773'),
+              moneyFormat: '%E2%82%B1%7B%7Bamount%7D%7D',
+              options: {
+                product: {
+                  styles: {
+                    product: {
+                      '@media (min-width: 601px)': {
+                        'max-width': 'calc(25% - 20px)',
+                        'margin-left': '20px',
+                        'margin-bottom': '50px',
+                      },
+                      'text-align': 'left',
+                    },
+                    title: {
+                      'font-family': 'Droid Sans, sans-serif',
+                      'font-weight': 'normal',
+                      color: '#000000',
+                    },
+                    button: {
+                      'font-family': 'Arial, sans-serif',
+                      color: '#000000',
+                      ':hover': {
+                        color: '#000000',
+                        'background-color': '#e6b000',
+                      },
+                      'background-color': '#ffc300',
+                      ':focus': {
+                        'background-color': '#e6b000',
+                      },
+                      'border-radius': '30px',
+                    },
+                    price: {
+                      'font-family': 'Droid Sans, sans-serif',
+                      color: '#000000',
+                    },
+                    compareAt: {
+                      'font-family': 'Droid Sans, sans-serif',
+                      color: '#000000',
+                    },
+                    unitPrice: {
+                      'font-family': 'Droid Sans, sans-serif',
+                      color: '#000000',
+                    },
+                    description: {
+                      'font-family': 'Droid Sans, sans-serif',
+                      color: '#000000',
+                    },
+                  },
+                  contents: {
+                    img: false,
+                    title: false,
+                    price: false,
+                  },
+                  text: {
+                    button: 'Add to cart',
+                  },
+                  googleFonts: ['Droid Sans'],
+                },
+                productSet: {
+                  styles: {
+                    products: {
+                      '@media (min-width: 601px)': {
+                        'margin-left': '-20px',
+                      },
+                    },
+                  },
+                },
+                modalProduct: {
+                  contents: {
+                    img: false,
+                    imgWithCarousel: true,
+                    button: false,
+                    buttonWithQuantity: true,
+                  },
+                  styles: {
+                    product: {
+                      '@media (min-width: 601px)': {
+                        'max-width': '100%',
+                        'margin-left': '0px',
+                        'margin-bottom': '0px',
+                      },
+                    },
+                    button: {
+                      'font-family': 'Arial, sans-serif',
+                      color: '#000000',
+                      ':hover': {
+                        color: '#000000',
+                        'background-color': '#e6b000',
+                      },
+                      'background-color': '#ffc300',
+                      ':focus': {
+                        'background-color': '#e6b000',
+                      },
+                      'border-radius': '30px',
+                    },
+                    title: {
+                      'font-family': 'Helvetica Neue, sans-serif',
+                      'font-weight': 'bold',
+                      'font-size': '26px',
+                      color: '#4c4c4c',
+                    },
+                    price: {
+                      'font-family': 'Helvetica Neue, sans-serif',
+                      'font-weight': 'normal',
+                      'font-size': '18px',
+                      color: '#4c4c4c',
+                    },
+                    compareAt: {
+                      'font-family': 'Helvetica Neue, sans-serif',
+                      'font-weight': 'normal',
+                      'font-size': '15.299999999999999px',
+                      color: '#4c4c4c',
+                    },
+                    unitPrice: {
+                      'font-family': 'Helvetica Neue, sans-serif',
+                      'font-weight': 'normal',
+                      'font-size': '15.299999999999999px',
+                      color: '#4c4c4c',
+                    },
+                    description: {
+                      'font-family': 'Helvetica Neue, sans-serif',
+                      'font-weight': 'normal',
+                      'font-size': '14px',
+                      color: '#4c4c4c',
+                    },
+                  },
+                  text: {
+                    button: 'Add to cart',
+                  },
+                },
+                option: {},
+                cart: {
+                  styles: {
+                    button: {
+                      'font-family': 'Arial, sans-serif',
+                      color: '#000000',
+                      ':hover': {
+                        color: '#000000',
+                        'background-color': '#e6b000',
+                      },
+                      'background-color': '#ffc300',
+                      ':focus': {
+                        'background-color': '#e6b000',
+                      },
+                      'border-radius': '30px',
+                    },
+                    title: {
+                      color: '#000000',
+                    },
+                    header: {
+                      color: '#000000',
+                    },
+                    lineItems: {
+                      color: '#000000',
+                    },
+                    subtotalText: {
+                      color: '#000000',
+                    },
+                    subtotal: {
+                      color: '#000000',
+                    },
+                    notice: {
+                      color: '#000000',
+                    },
+                    currency: {
+                      color: '#000000',
+                    },
+                    close: {
+                      color: '#000000',
+                      ':hover': {
+                        color: '#000000',
+                      },
+                    },
+                    empty: {
+                      color: '#000000',
+                    },
+                    noteDescription: {
+                      color: '#000000',
+                    },
+                    discountText: {
+                      color: '#000000',
+                    },
+                    discountIcon: {
+                      fill: '#000000',
+                    },
+                    discountAmount: {
+                      color: '#000000',
+                    },
+                    cart: {
+                      'background-color': '#f3f3f3',
+                    },
+                    footer: {
+                      'background-color': '#f3f3f3',
+                    },
+                  },
+                  text: {
+                    total: 'Subtotal',
+                    notice: '',
+                    button: 'Checkout',
+                    noteDescription: 'Special instructions for the seller',
+                  },
+                  contents: {
+                    note: true,
+                  },
+                  popup: false,
+                },
+                toggle: {
+                  styles: {
+                    toggle: {
+                      'font-family': 'Arial, sans-serif',
+                      'background-color': '#ffc300',
+                      ':hover': {
+                        'background-color': '#e6b000',
+                      },
+                      ':focus': {
+                        'background-color': '#e6b000',
+                      },
+                    },
+                    count: {
+                      color: '#000000',
+                      ':hover': {
+                        color: '#000000',
+                      },
+                    },
+                    iconPath: {
+                      fill: '#000000',
+                    },
+                  },
+                },
+                lineItem: {
+                  styles: {
+                    variantTitle: {
+                      color: '#000000',
+                    },
+                    title: {
+                      color: '#000000',
+                    },
+                    price: {
+                      color: '#000000',
+                    },
+                    fullPrice: {
+                      color: '#000000',
+                    },
+                    discount: {
+                      color: '#000000',
+                    },
+                    discountIcon: {
+                      fill: '#000000',
+                    },
+                    quantity: {
+                      color: '#000000',
+                    },
+                    quantityIncrement: {
+                      color: '#000000',
+                      'border-color': '#000000',
+                    },
+                    quantityDecrement: {
+                      color: '#000000',
+                      'border-color': '#000000',
+                    },
+                    quantityInput: {
+                      color: '#000000',
+                      'border-color': '#000000',
+                    },
+                  },
+                },
+              },
+            });
+          });
+        }
+      })();
+      /*]]>*/
+    </script>
+  </body>
+</html>
