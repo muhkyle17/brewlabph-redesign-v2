@@ -188,7 +188,7 @@ li {
   display: block;
 }
 
-.hero {
+#hero {
   background-image: url(../../images/hero-brewlab.jpg);
   background-size: cover;
   background-position: center bottom;
